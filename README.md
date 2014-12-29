@@ -18,7 +18,7 @@ meteor add lookback:bouncejs
 
 ## Version history
 
-- `0.1.0` - Initial publish.
+- `0.8.1_1` - Initial publish.
 
 ## Contributions
 
