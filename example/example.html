@@ -1,0 +1,63 @@
+<head>
+  <title>BounceJS for Meteor Demo</title>
+</head>
+
+<body>
+  <h1>BounceJS for Meteor</h1>
+
+  <p>
+    Demonstrating <a href="http://bouncejs.com/">BounceJS</a> for Meteor, by <a href="http://github.com/lookback">Lookback</a>.
+  </p>
+
+  <ul class="links">
+    <li>
+      <a href="http://github.com/lookback/meteor-bouncejs">GitHub</a>
+    </li>
+    <li>
+      <a href="https://atmospherejs.com/lookback/bouncejs">Atmosphere</a>
+    </li>
+    <li>
+      <a href="http://github.com/lookback/meteor-bouncejs/tree/master/example">Source for this demo</a>
+    </li>
+  </ul>
+
+  {{ > demo }}
+
+  <h2>Source</h2>
+
+<pre><code>Template.demo.events(
+  'click #animate': (evt, tmpl) ->
+
+  $box = $('.box')
+
+  anim = new Bounce()
+    .scale(
+      from: {x: 1, y: 1}
+      to:   {x: 1.5, y: 1.5}
+      duration: 400
+      bounces: 6
+      stiffness: 2
+    )
+    .translate(
+      to:   {x: 100, y: 100}
+      bounces: 4
+      stiffness: 4
+    )
+    .rotate(
+      to: 45
+      bounces: 3
+      stiffness: 6
+    )
+    .applyTo($box)
+)</code></pre>
+</body>
+
+<template name="demo">
+  <p>
+    <button id="animate">Animate box</button>
+  </p>
+
+  <div class="box">
+    I'm a box
+  </div>
+</template>
