@@ -6,6 +6,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom('METEOR@0.9.3')
   api.use('coffeescript')
 
   api.add_files([
