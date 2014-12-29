@@ -4,7 +4,8 @@
 
 This package bundles the BounceJS source in a Meteor package and expose the `Bounce` global on the client.
 
-**API, usage, and more info:** [tictail/bouncejs](https://github.com/tictail/bounce.js).
+- **API, usage, and more info:** [tictail/bouncejs](https://github.com/tictail/bounce.js)
+- **Demo:** [bouncejs.meteor.com](http://bouncejs.meteor.com/)
 
 If you find this package outdated in parity to the original package, feel free to file an issue.
 
