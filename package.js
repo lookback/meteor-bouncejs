@@ -1,7 +1,8 @@
 Package.describe({
   name: 'lookback:bouncejs',
   summary: 'Bounce.js from Tictail packaged for Meteor.',
-  version: '0.8.1_1'
+  version: '0.8.1_1',
+  git: 'https://github.com/lookback/meteor-bouncejs.git'
 });
 
 Package.on_use(function (api) {
