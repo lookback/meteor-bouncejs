@@ -6,6 +6,40 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+h1 {
+  margin: 3rem auto;
+  font-size: 3em;
+  text-align: center;
+}
+
+p, ul {
+  margin: 0 0 2rem;
+}
+
+a {
+  color: #C0392B;
+}
+
+pre, code {
+  font-family: Menlo, Monaco, Courier, monospace;
+}
+
+pre {
+  font-size: 0.9em;
+  background-color: #EEE;
+  border-radius: 3px;
+  white-space: pre-wrap;
+  color: #444;
+  padding: 2rem 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+
 .box {
   display: flex;
   flex-direction: column;
@@ -33,23 +67,4 @@ body {
       color: #aaa;
     }
   }
-}
-
-a {
-  color: #C0392B;
-}
-
-pre, code {
-  font-family: Menlo, Monaco, Courier, monospace;
-}
-
-pre {
-  font-size: 0.9em;
-  background-color: #EEE;
-  border-radius: 3px;
-  white-space: pre-wrap;
-  color: #444;
-  padding: 2rem 2rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
 }
